@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.nines.tutorialmod.block.ModBlocks;
 import net.nines.tutorialmod.item.ModItems;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,8 +23,10 @@ public class TutorialMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		LOGGER.info("Hello Fabric world!");
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+
+		LOGGER.info("Hello Fabric world!");
 	}
 }
