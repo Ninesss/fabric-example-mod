@@ -14,7 +14,7 @@ import net.nines.tutorialmod.TutorialMod;
 public class ModItems {
 
     public static final Item RUBY = registerItem("ruby",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.RUBY)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);

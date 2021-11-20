@@ -7,10 +7,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.nines.tutorialmod.TutorialMod;
+import net.nines.tutorialmod.item.ModItemGroup;
 
 /**
  * @Auther:Nines
@@ -31,7 +31,7 @@ public class ModBlocks {
 
     private static Item registerBlockItem(String name, Block block){
         return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings().group(ItemGroup.MISC)));
+                new BlockItem(block, new FabricItemSettings().group(ModItemGroup.RUBY)));
     }
 
     public static void registerModBlocks(){
