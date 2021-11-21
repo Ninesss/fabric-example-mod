@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.nines.tutorialmod.TutorialMod;
+import net.nines.tutorialmod.item.custom.DowsingRodItem;
 
 /**
  * @Auther:Nines
@@ -20,6 +21,9 @@ public class ModItems {
             new Item(new FabricItemSettings()
                     .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build())
                     .group(ModItemGroup.RUBY)));
+
+    public static final Item DOWSING_ROD = registerItem("dowsing_rod",
+            new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.RUBY).maxDamage(10)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
