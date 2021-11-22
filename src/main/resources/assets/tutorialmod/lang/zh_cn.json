@@ -9,6 +9,8 @@
   "block.tutorialmod.status_block": "定位方块",
   "block.tutorialmod.ruby_slab": "红宝石半砖",
   "block.tutorialmod.ruby_stairs": "红宝石楼梯",
+  "block.tutorialmod.ruby_fence": "红宝石栅栏",
+  "block.tutorialmod.ruby_fence_gate": "红宝石栅栏门",
 
   "itemGroup.tutorialmod.ruby": "红宝石模组",
   "tooltip.tutorialmod.dowsing_rod": "按§eSHIFT§r查看更多信息!",
