@@ -9,7 +9,9 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.nines.tutorialmod.TutorialMod;
+import net.nines.tutorialmod.block.custom.ModPressurePlateBlock;
 import net.nines.tutorialmod.block.custom.ModStairsBlock;
+import net.nines.tutorialmod.block.custom.ModStoneButtonBlock;
 import net.nines.tutorialmod.block.custom.StatusBlock;
 import net.nines.tutorialmod.item.ModItemGroup;
 
@@ -58,6 +60,19 @@ public class ModBlocks {
 
     public static final Block RUBY_FENCE_GATE = registerBlock("ruby_fence_gate",
             new FenceGateBlock(FabricBlockSettings.of(Material.STONE)
+                    .strength(6.0f)
+                    .breakByTool(FabricToolTags.PICKAXES,2)
+                    .requiresTool()));
+
+    public static final Block RUBY_BUTTON = registerBlock("ruby_button",
+            new ModStoneButtonBlock(FabricBlockSettings.of(Material.STONE)
+                    .strength(6.0f)
+                    .breakByTool(FabricToolTags.PICKAXES,2)
+                    .requiresTool()));
+
+    public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.STONE)
                     .strength(6.0f)
                     .breakByTool(FabricToolTags.PICKAXES,2)
                     .requiresTool()));

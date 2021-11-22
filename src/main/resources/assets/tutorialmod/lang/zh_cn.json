@@ -11,8 +11,11 @@
   "block.tutorialmod.ruby_stairs": "红宝石楼梯",
   "block.tutorialmod.ruby_fence": "红宝石栅栏",
   "block.tutorialmod.ruby_fence_gate": "红宝石栅栏门",
+  "block.tutorialmod.ruby_button": "红宝石按钮",
+  "block.tutorialmod.ruby_pressure_plate": "红宝石压板",
 
   "itemGroup.tutorialmod.ruby": "红宝石模组",
+
   "tooltip.tutorialmod.dowsing_rod": "按§eSHIFT§r查看更多信息!",
   "tooltip.tutorialmod.dowsing_rod_shift": "右击一个方块来探测它下面的矿物"
 }
