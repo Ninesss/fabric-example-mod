@@ -8,5 +8,7 @@
   "block.tutorialmod.ruby_block": "红宝石块",
   "block.tutorialmod.status_block": "定位方块",
 
-  "itemGroup.tutorialmod.ruby": "红宝石模组"
+  "itemGroup.tutorialmod.ruby": "红宝石模组",
+  "tooltip.tutorialmod.dowsing_rod": "按§eSHIFT§r查看更多信息!",
+  "tooltip.tutorialmod.dowsing_rod_shift": "右击一个方块来探测它下面的矿物"
 }
