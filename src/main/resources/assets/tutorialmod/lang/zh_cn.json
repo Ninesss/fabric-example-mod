@@ -7,6 +7,8 @@
   "block.tutorialmod.ruby_ore": "红宝石矿",
   "block.tutorialmod.ruby_block": "红宝石块",
   "block.tutorialmod.status_block": "定位方块",
+  "block.tutorialmod.ruby_slab": "红宝石半砖",
+  "block.tutorialmod.ruby_stairs": "红宝石楼梯",
 
   "itemGroup.tutorialmod.ruby": "红宝石模组",
   "tooltip.tutorialmod.dowsing_rod": "按§eSHIFT§r查看更多信息!",

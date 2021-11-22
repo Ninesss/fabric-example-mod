@@ -56,8 +56,7 @@ public class DowsingRodItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(Screen.hasShiftDown()){
-            tooltip.add(new TranslatableText("tooltip.tutorialmod.dowsing_rod_shift"));
-        } else{
+       } else{
             tooltip.add(new TranslatableText("tooltip.tutorialmod.dowsing_rod"));
         }
 

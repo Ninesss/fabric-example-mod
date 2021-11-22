@@ -5,11 +5,13 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.nines.tutorialmod.TutorialMod;
+import net.nines.tutorialmod.block.custom.ModStairsBlock;
 import net.nines.tutorialmod.block.custom.StatusBlock;
 import net.nines.tutorialmod.item.ModItemGroup;
 
@@ -33,6 +35,19 @@ public class ModBlocks {
 
     public static final Block STATUS_BLOCK = registerBlock("status_block",
             new StatusBlock(FabricBlockSettings.of(Material.STONE)
+                    .strength(6.0f)
+                    .breakByTool(FabricToolTags.PICKAXES,2)
+                    .requiresTool()));
+
+    public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
+            new ModStairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(),
+                    FabricBlockSettings.of(Material.STONE)
+                    .strength(6.0f)
+                    .breakByTool(FabricToolTags.PICKAXES,2)
+                    .requiresTool()));
+
+    public static final Block RUBY_SLAB = registerBlock("ruby_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.STONE)
                     .strength(6.0f)
                     .breakByTool(FabricToolTags.PICKAXES,2)
                     .requiresTool()));
