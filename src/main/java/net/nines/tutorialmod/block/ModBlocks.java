@@ -10,6 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.nines.tutorialmod.TutorialMod;
+import net.nines.tutorialmod.block.custom.StatusBlock;
 import net.nines.tutorialmod.item.ModItemGroup;
 
 /**
@@ -26,6 +27,12 @@ public class ModBlocks {
 
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
             new Block(FabricBlockSettings.of(Material.STONE)
+                    .strength(6.0f)
+                    .breakByTool(FabricToolTags.PICKAXES,2)
+                    .requiresTool()));
+
+    public static final Block STATUS_BLOCK = registerBlock("status_block",
+            new StatusBlock(FabricBlockSettings.of(Material.STONE)
                     .strength(6.0f)
                     .breakByTool(FabricToolTags.PICKAXES,2)
                     .requiresTool()));

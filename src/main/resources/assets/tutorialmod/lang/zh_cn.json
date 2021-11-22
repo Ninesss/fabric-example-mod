@@ -2,7 +2,10 @@
   "item.tutorialmod.ruby": "红宝石",
   "item.tutorialmod.pepper": "辣椒",
   "item.tutorialmod.dowsing_rod": "探矿棒",
+
   "block.tutorialmod.ruby_ore": "红宝石矿",
   "block.tutorialmod.ruby_block": "红宝石块",
+  "block.tutorialmod.status_block": "定位方块",
+
   "itemGroup.tutorialmod.ruby": "红宝石模组"
 }
